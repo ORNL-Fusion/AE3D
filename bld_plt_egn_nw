@@ -1,0 +1,2 @@
+ifort -c -O egn_plotter.f `PKG_CONFIG_PATH=/usr/local/plplot-5.11.1/lib/pkgconfig pkg-config --cflags --libs plplot-f95`
+ifort -O -o xplot_egn_nw egn_plotter.o `PKG_CONFIG_PATH=/usr/local/plplot-5.11.1/lib/pkgconfig pkg-config --cflags --libs plplot-f95`

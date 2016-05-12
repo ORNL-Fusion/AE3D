@@ -1,0 +1,12 @@
+MKLPATH="/opt/intel/mkl/lib"
+MKLINCLUDE="/opt/intel/mkl/include"
+ifort \
+	-fixed \
+         \
+	-o xjdqz \
+	-O3 \
+	symtrd_mod.f90  \
+	myjdqz_mod.f90 \
+	main_jdqz.f90 \
+	libjdqz.a \
+	-I. -L$MKLPATH -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread
