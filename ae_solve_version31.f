@@ -393,7 +393,7 @@ c
        do k=1,ns
         rho(k) = dble(k)/dble(ns+1)
 	r_pt = rho(k)
-        iota_inv_pf(m) = iotapf(m)/(iotaf(m)**2)   !neg. sign factored in futher on
+        iota_inv_pf(k) = iotapf(k)/(iotaf(k)**2)   !neg. sign factored in futher on
 	if(ion_profile .eq. 0) then
 	  ion_density(k) = (iotaf(k)/iotaf(1))**2   !profile that lines up gaps
 	else if(ion_profile .eq. 1) then
